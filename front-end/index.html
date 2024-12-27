@@ -11,3 +11,51 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+<!--
+ERP_i5/
+├── front-end/
+│   ├── public/
+│   │   ├── index.html      # Punto de entrada del dashboard
+│   │   └── assets/         # Imágenes, estilos, y otros recursos estáticos
+│   ├── src/
+│   │   ├── components/     # Componentes reutilizables del dashboard
+│   │   │   ├── Menu.js     # Menú desplegable para seleccionar microservicios
+│   │   │   └── Header.js   # Encabezado principal
+│   │   ├── pages/
+│   │   │   ├── Purchases.js  # Página del microservicio de compras
+│   │   │   ├── Sales.js      # Página del microservicio de ventas
+│   │   │   └── Inventory.js  # Página del microservicio de inventario
+│   │   ├── App.js           # Archivo principal para manejar rutas y navegación
+│   │   └── index.js         # Punto de entrada de React
+│   └── package.json        # Dependencias y scripts del frontend
+│
+├── back-end/
+│   ├── purchases/
+│   │   ├── controllers/
+│   │   │   └── purchaseController.js  # Lógica del microservicio de compras
+│   │   ├── models/
+│   │   │   └── Purchase.js            # Modelo de datos para compras
+│   │   ├── routes/
+│   │   │   └── purchaseRoutes.js      # Rutas del microservicio de compras
+│   │   ├── app.js                     # Configuración del microservicio de compras
+│   │   └── package.json               # Dependencias del microservicio de compras
+│   │
+│   ├── sales/                         # Similar a purchases, para ventas
+│   ├── inventory/                     # Similar a purchases, para inventario
+│   └── shared/
+│       ├── database.js                # Configuración de conexión a MongoDB
+│       ├── utils/
+│       │   └── validators.js          # Validadores reutilizables
+│       └── middlewares/
+│           └── auth.js                # Middleware de autenticación
+│
+├── .env                              # Variables de entorno (MONGO_URI, PORT, etc.)
+├── .gitignore                        # Archivos y carpetas a ignorar por Git
+└── README.md                         # Documentación del proyecto
+
+
+
+
+-->
